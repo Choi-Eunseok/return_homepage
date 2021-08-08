@@ -1,0 +1,391 @@
+*{ text-decoration: none;
+  color:black;}
+html, body{
+ 
+    height:100%;
+    font-family:'고딕',Gothic;
+    text-align: center;
+           }
+  @font-face {
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+             }
+  /* 헤더부분 */
+  /*#header{
+    position: fixed;
+    top:0%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    max-height: 150px;
+    width: 100%; height: 100%;
+    padding: 20px;
+    text-align:left;
+    z-index: 999;
+    background-color: white;
+    padding-top: 0%;
+  }
+  #header::before{
+    display: inline-block;
+    position:absolute;
+    transform:translate(-50%, 0%);
+    left: 0;
+    content : "";
+    height: 1px;
+    width:1000%;
+    bottom  : 0;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+  }
+  #logo1{
+    display:inline-block;
+    font-family: 'IBMPlexSansKR-Bold';
+    letter-spacing: -2.5px;
+    font-weight: bolder;
+    font-size: 35px;
+    margin: 10px 0px 10px 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  #logo2{
+    display: inline;
+    width: 60px;
+    height: 60px;
+    margin: 10px 0 0 0; 
+    vertical-align: top;
+    position: relative;
+    top:-2%;
+    cursor: pointer;
+  }
+  .login{
+    float: right;
+    display:inline;
+    font-size: 15px;
+    padding: 7px;
+    margin: 0 0 0 0;
+    cursor: pointer;
+  }
+  .login:hover{
+    border-radius: 10px;
+    background-color: rgba(234,234,234,0.9);
+    background: radial-gradient(circle, rgba(234,234,234,0.9), white);
+  }
+  #header_right{
+    background: skyblue;
+    position: relative;
+    right:2%;
+    float:right;
+    max-height: 90px;
+    height: 100%;
+    display: inline-block;
+  }
+  #search_bar_wrap{
+    background: gold;
+    display:inline-block;
+    float:right;
+    width:200px;
+    position:absolute;
+    bottom : 10px;
+  }
+  #search_bar{
+    float:right;
+    margin:0 0 0 0;
+    display:inline-block;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 998;
+  }
+  #search_bar:focus {
+    outline: none;
+  }
+  #search_button{
+    display: inline-block;
+    background: white url("clue.png") no-repeat right;
+    background-size: cover;
+    border: none;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    border-radius: 40px;
+    filter: invert(100%);
+    border-radius: 40px;
+    position:relative;
+    top:-3%;
+    left:80%;
+    z-index: 999;
+  }
+
+  #header_menu_bar{
+    display: flex;
+    margin : 0;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  #header_menu_bar .btn{
+    flex:1;
+    text-align: center;
+    line-height: 75px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  #header_menu_bar .btn:hover{
+    background: gray;
+    transition: 0.4s;
+  }
+
+  #header_menu_bar .btn.on{
+    background: rgb(89, 89, 187);
+  }*/
+/*------------------------*/
+
+  #background-photo{
+    display:inline-block;
+    width: 95%; height: 100%;
+    /*max-width: 1200px;*/
+    max-height: 550px;
+    background: url("경희대학교 정문 사진.png") no-repeat;
+    background-position: center center;
+    background-size: 95% 86.7%;
+    opacity: 0.4;
+    z-index: -999;
+    padding-bottom: 0;
+  }
+
+  /*----------------------*/
+
+#prize_list_wrap{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height:900px;
+  display: flex;
+  /*background: red;*/
+}
+
+  #prize_list_left-side{
+    /*width:300px;*/
+    background: rgb(248, 248, 248);
+    height: auto;
+    flex: 2;
+    text-align: left;
+  }
+
+  #prize_list_right-side{
+    /*width: 600px;*/
+    height: auto;
+    flex: 10;
+   /* background: yellow;*/
+  }
+
+  #prize_list_block{
+    width:100%;
+    height:100px;
+    background: gray;
+    text-align: center;
+    line-height: 100px;
+    font-size : 28px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  #prize_list_block a{
+    color:white;
+  }
+
+  #prize_list_menu{
+   /* padding-left: 40%;*/
+    font-size:20px;
+    line-height: 40px;
+  }
+
+  #prize_list_right_head{
+    display: flex;
+  }
+
+  #content_title{
+    flex:2;
+    color:black;
+    font-size : 28px;
+    font-weight: bold;
+    width: 100%;
+    height: 100px;
+    /*line-height: 100px;*/
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+
+  #content_title > div{
+    
+    display:inline;
+    flex:1;
+    align-self: center;
+  }
+
+  #content_search{
+    flex:8;
+    text-align: right;
+    height: 100px;
+    line-height: 100px;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+
+  #content_search > input{
+    display: inline-block;
+    font-family: 'Georgia';
+    vertical-align: top;
+    padding : 0 0 0.1em;
+    width:40%;
+    height: 30px;
+  }
+
+  #content_search_submit{
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    height: 36px;
+    padding : 0 0 0.1em;
+  }
+
+  #box{
+    margin-left: -10px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    cursor: pointer;
+  }
+
+  #prize_list_content{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    background: white;
+  }
+
+  
+
+
+  #prize_list_content > div{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+
+  #prize_list_content > #prize_list_paging{
+    width: 400px;
+    height: 50px;
+  }
+
+  #prize_list_content > div .content{
+    margin-top: 10%;
+    display: inline-block;
+    text-align: center;
+    background: white;
+    border: 3px solid black;
+    width: 70%;
+    height: 70%;
+    cursor: pointer;
+  }
+
+  #content1{
+    border-radius: 10px;
+    display: inline-block;
+  }
+  #content1:hover{
+    background: rgba(100,100,100,0.5);
+    transition: 0.4s;
+  }
+  #content2{
+    border-radius: 10px;
+    display: inline-block;
+  }
+  #content2:hover{
+    background: rgba(100,100,100,0.5);
+    transition: 0.4s;
+  }
+  #content3{
+    border-radius: 10px;
+    display: inline-block;
+  }
+  #content3:hover{
+    background: rgba(100,100,100,0.5);
+    transition: 0.4s;
+  }
+  #content4{
+    border-radius: 10px;
+    display: inline-block;
+  }
+  #content4:hover{
+    background: rgba(100,100,100,0.5);
+    transition: 0.4s;
+  }
+  #content5{
+    border-radius: 10px;
+    display: inline-block;
+  }
+  #content5:hover{
+    background: rgba(100,100,100,0.5);
+    transition: 0.4s;
+  }
+  #content6{
+    border-radius: 10px;
+    display: inline-block;
+  }
+  #content6:hover{
+    background: rgba(100,100,100,0.5);
+    transition: 0.4s;
+  }
+
+  #prize_list_paging{
+    display: inline-block;
+  }
+
+  #prize_list_paging > div{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 14px;
+    width:32px;
+    height:32px;
+    cursor: pointer;
+    line-height: 32px;
+    font-weight: bold;
+  }
+
+  #prize_list_paging > div#num_page{
+    border: none;
+    font-weight: 100;
+    width:32px;
+    height:10px;
+  }
+
+  #prize_list_content > #btn_create_content{
+    border: 1px solid gray;
+    width: 75px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 80%;
+    background: gray;
+    color: white;
+  }
+
+  @media(max-width:920px){
+    #prize_list_block > a{
+      font-size:14px;
+    }
+    #content_title > div{
+      font-size:14px;
+    }
+  }
